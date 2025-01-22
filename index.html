@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy</title>
+    <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon" />
+
+    <!-- font family (Lato and Inter) added here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome CDN added here -->
+    <script
+      src="https://kit.fontawesome.com/c69192f2f0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- DaisyUI and Tailwind CSS CDN added here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- customize design -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lato: "Lato",
+              inter: "Inter",
+            },
+            colors: {
+              forestGreen: "#0E7A81",
+              normalGreen: "rgba(14, 122, 129, 0.2)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lato">
+    <header class="w-11/12 mx-auto">
+      <!-- navbar section for small devices starts here -->
+      <nav class="flex justify-between items-center py-8 md:hidden">
+        <div class="flex items-center gap-x-3">
+          <img class="w-6 h-5" src="./images/logo.webp" alt="" />
+          <h3 class="text-2xl font-black">Peddy</h3>
+        </div>
+        <div class="navbar-start">
+          <div class="dropdown flex justify-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>Contact</a></li>
+              <li>
+                <div
+                  class="border rounded-full w-10 h-10 flex justify-center items-center"
+                >
+                  <img
+                    class="w-5"
+                    src="https://img.icons8.com/?size=32&id=15265&format=png"
+                    alt=""
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar section for small devices ends here -->
+
+      <!-- navbar section for medium devices starts here -->
+      <nav class="hidden md:flex justify-between items-center py-8">
+        <!-- nav-title -->
+        <div class="flex items-center gap-x-3">
+          <img class="w-6 h-5" src="./images/logo.webp" alt="" />
+          <h3 class="text-2xl font-black">Peddy</h3>
+        </div>
+
+        <!-- nav-menus -->
+        <div class="space-x-8 text-gray-500 text-base font-normal">
+          <a href="">Home</a>
+          <a href="">Shop</a>
+          <a href="">Contact</a>
+        </div>
+        <!-- nav user-icon -->
+        <div
+          class="border rounded-full w-10 h-10 flex justify-center items-center"
+        >
+          <img
+            class="w-5"
+            src="https://img.icons8.com/?size=32&id=15265&format=png"
+            alt=""
+          />
+        </div>
+      </nav>
+      <!-- navbar section for medium devices ends here -->
+
+      <!-- nav-banner section starts here -->
+      <nav class="mt-16">
+        <div class="flex justify-center items-center space-x-5">
+          <h3 class="text-xl font-bold text-gray-500">
+            Bringing Families Together
+          </h3>
+          <img
+            class="w-7"
+            src="https://img.icons8.com/?size=48&id=QV5JEtrTP6nH&format=png"
+            alt=""
+          />
+        </div>
+        <br />
+        <h1
+          class="text-center font-black leading-tight lg:leading-tight text-5xl lg:text-7xl"
+        >
+          Your Path To Adoption <br />
+          Starts Here
+        </h1>
+        <br />
+        <p class="text-center text-sm lg:text-base font-normal text-gray-500">
+          Peddy is a pet adoption platform connecting loving pet owners with
+          animals in need of homes. <br />
+          Browse available pets, learn about adoption, and give a pet a forever
+          home through our easy-to-use platform.
+        </p>
+        <br />
+        <a href="#adopt-section">
+          <button
+            class="btn btn-success text-white text-lg w-36 h-12 bg-forestGreen border-none block mx-auto"
+          >
+            View More
+          </button>
+        </a>
+        <img class="mx-auto mt-12" src="./images/pet.webp" alt="" />
+      </nav>
+      <!-- nav-banner section ends here -->
+    </header>
+
+    <main>
+      <!-- Adopt Your Best Friend section starts here -->
+      <section id="adopt-section" class="text-center mt-16 w-11/12 mx-auto">
+        <h3 class="text-4xl font-black">Adopt Your Best Friend</h3>
+        <br />
+        <p class="text-sm lg:text-base font-normal text-gray-500">
+          Find loyal companionship by adopting a pet in need. <br />
+          Discover a loving animal, offer them a forever home, and create a
+          lifelong bond with your new best friend today!
+        </p>
+        <!-- All pet items button section starts here-->
+        <div
+          id="all-pet-items"
+          class="mt-12 grid grid-flow-col justify-between"
+        ></div>
+        <!-- All pet items button section ends here-->
+
+        <!-- best deal and sorting button section starts here -->
+        <div
+          class="flex flex-col md:flex-row items-center justify-between mt-8 gap-y-4 md:gap-y-0"
+        >
+          <h3 class="text-2xl font-black">Best Deal For You</h3>
+          <button
+            id="sorted-btn"
+            class="btn btn-md lg:btn-lg bg-forestGreen text-white md:text-xl font-bold hover:bg-forestGreen"
+          >
+            Sort by Price
+          </button>
+        </div>
+        <!-- best deal and sorting button section ends here -->
+      </section>
+
+      <!-- show all pet category data -->
+      <section class="w-11/12 mx-auto">
+        <!-- loading spinner section starts here -->
+        <div id="loaded-spinner" class="justify-center hidden">
+          <span class="loading loading-bars loading-lg"></span>
+        </div>
+        <!-- loading spinner section ends here -->
+
+        <!-- diplay all pets information section starts here-->
+        <section
+          id="display-all-pets-information"
+          class="mt-8 grid grid-cols-3 md:grid-cols-4 gap-x-5"
+        >
+          <div
+            id="all-pets-information"
+            class="col-span-2 md:col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-5"
+          ></div>
+
+          <!-- column-4 -->
+          <div
+            id="images-container"
+            class="border rounded-xl h-fit col-span-1 md:col-span-1 p-2 grid lg:grid-cols-2 gap-4"
+          ></div>
+        </section>
+        <!-- diplay all pets data section ends here-->
+      </section>
+
+      <!-- modal section starts here -->
+      <section id="pet-details"></section>
+      <!-- modal section ends here -->
+
+      <!-- countdown section starts here -->
+      <section id="countdown-section"></section>
+      <!-- countdown section ends here -->
+    </main>
+    <footer class="footer bg-black text-white py-8 mt-8">
+      <section
+        class="mx-auto lg:flex lg:items-stretch lg:flex-row lg:justify-between w-11/12"
+      >
+        <nav class="mx-auto lg:mx-0">
+          <div
+            class="flex items-center justify-center lg:justify-stretch gap-x-3"
+          >
+            <img class="w-6 h-5" src="./images/logo.webp" alt="" />
+            <h3 class="text-2xl font-black">Peddy</h3>
+          </div>
+          <br />
+          <!-- <h6 class="footer-title">Services</h6> -->
+          <div
+            class="flex flex-col items-center lg:items-stretch text-neutral-400"
+          >
+            <a class="link link-hover"
+              >Location: av. Washington 165, NY CA 54003</a
+            ><br />
+            <a class="link link-hover">Phone: +31 85 964 47 25</a><br />
+            <a class="link link-hover">Email: info@yourdomain.com</a><br />
+            <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a
+            ><br />
+          </div>
+          <div
+            class="flex items-center justify-center lg:justify-stretch gap-x-4"
+          >
+            <a href="https://www.facebook.com/"
+              ><img
+                class="w-7 h-7"
+                src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000"
+                alt=""
+            /></a>
+            <a href="https://x.com/?lang=en"
+              ><img class="w-5 h-5" src="./images/twitter.svg" alt=""
+            /></a>
+            <a href="https://www.youtube.com/"
+              ><img
+                class="w-8 h-8"
+                src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000"
+                alt=""
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img class="w-6 h-6" src="./images/instragram.svg" alt="" />
+            </a>
+          </div>
+        </nav>
+        <nav class="mx-auto lg:mx-0">
+          <h3 class="text-white font-bold text-lg text-center lg:text-left">
+            Useful Links
+          </h3>
+          <br />
+          <div
+            class="flex flex-col items-center lg:items-stretch text-neutral-400 gap-y-4"
+          >
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About</a>
+            <a class="link link-hover">Animals</a>
+            <a class="link link-hover">Foundation</a>
+            <a class="link link-hover">Contact</a>
+          </div>
+        </nav>
+        <form class="mx-auto lg:mx-0">
+          <h3 class="text-white font-bold text-lg text-center lg:text-left">
+            Drop a Message
+          </h3>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text"></span>
+            </label>
+            <div class="space-y-4">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="input input-bordered bg-neutral-700 w-full text-base"
+              />
+              <br />
+              <button
+                class="btn w-full bg-forestGreen text-white border-none text-xl font-bold"
+              >
+                Subscribe
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
